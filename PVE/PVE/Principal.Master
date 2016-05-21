@@ -7,16 +7,18 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href='principal.css' rel='stylesheet' type='text/css'/>
 </head>
 <body>
     <form id="form1" runat="server">
+
     <div>
         <asp:ContentPlaceHolder ID="Header" runat="server">
         <!-- AQUI VA LO DEL MENU DE ARRIBA O LO QUE SEA-->
 
-
         </asp:ContentPlaceHolder>
     </div>
+
 
             <div>
         <asp:ContentPlaceHolder ID="logo" runat="server">
