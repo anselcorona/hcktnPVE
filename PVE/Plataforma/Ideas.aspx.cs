@@ -40,7 +40,8 @@ namespace Plataforma
             Session["Idea"] = GridView1.SelectedRow.Cells[0].Text;
 
             // LINK A NUEVA PAGINA DE DIFERENTES IDEAS
-            Label1.Text = Session["Idea"].ToString();
+            Server.Transfer("VerIdea.aspx");
+            
         }
 
 
@@ -63,6 +64,16 @@ namespace Plataforma
 
                
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("CrearNuevaIdea.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("CrearNuevaIdea.aspx");
         }
     }
 }
