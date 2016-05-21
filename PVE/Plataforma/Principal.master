@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel='stylesheet' type='text/css' href='content/css/bootstrap.css' />
-    <title></title>
+    <title>Pucmm Emprende</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     
@@ -15,7 +15,7 @@
     <div>
         <asp:ContentPlaceHolder ID="Header" runat="server">
         <!-- AQUI VA LO DEL MENU DE ARRIBA O LO QUE SEA-->
-           <nav class="navbar navbar-default navbar-fixed-top">
+           <nav class="navbar navbar-custom navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -31,17 +31,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Nosotros <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Ideas</a></li>
       </ul>
-      
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Conectate!</a></li>
+        </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
             <!-- Contenido -->
             <div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
+  <h1>Plataforma Virtual de Emprendimiento</h1>
+  <p>Breve mensaje para mi compañero ganador Gleyder Hernandez</p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
 
