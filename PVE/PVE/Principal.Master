@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="PVE.Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="Header" runat="server">
+        <!-- AQUI VA LO DEL MENU DE ARRIBA O LO QUE SEA-->
+
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+            <div>
+        <asp:ContentPlaceHolder ID="logo" runat="server">
+        <!-- AQUI VA LO DEL LOGO (IMAGENES QUE SE VAN CAMBIANDO SCRIPTS)-->
+
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+            <div>
+        <asp:ContentPlaceHolder ID="Body" runat="server">
+        <!-- AQUI VA LA LOGICA DE CADA PAGINA (NOOOOOOO EDITAAAAAAR)-->
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+            <div>
+        <asp:ContentPlaceHolder ID="Footer" runat="server">
+        <!-- PARTE DE ABAJO DE LA PAGINA (LINKS REDES SOCIALES)-->
+
+
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
