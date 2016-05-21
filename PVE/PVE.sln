@@ -25,6 +25,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hackathon", "..\..\..\..\Do
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plataforma", "Plataforma\Plataforma.csproj", "{EC7F3D0D-695D-44F9-B935-042A8412999A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{C3C31F94-B018-4FEA-BC9E-87F4B7DBED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3C31F94-B018-4FEA-BC9E-87F4B7DBED62}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3C31F94-B018-4FEA-BC9E-87F4B7DBED62}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EC7F3D0D-695D-44F9-B935-042A8412999A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7F3D0D-695D-44F9-B935-042A8412999A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7F3D0D-695D-44F9-B935-042A8412999A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7F3D0D-695D-44F9-B935-042A8412999A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
