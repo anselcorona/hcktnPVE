@@ -5,10 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Principal : System.Web.UI.MasterPage
+namespace Plataforma
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Principal : System.Web.UI.MasterPage
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

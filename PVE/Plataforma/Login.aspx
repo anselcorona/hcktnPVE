@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Plataforma.Login" %>
 
 <!DOCTYPE html>
 
@@ -15,18 +14,21 @@
             Conectate!<br />
             <br />
             Usuario:<br />
-            <asp:TextBox ID="TextBox1" runat="server" Width="268px"></asp:TextBox>
+            <asp:TextBox ID="TextUsername" runat="server" Width="268px"></asp:TextBox>
             <br />
             <br />
             Contrasena:<br />
-            <asp:TextBox ID="TextBox2" runat="server" Width="266px"></asp:TextBox>
+            <asp:TextBox ID="TextPassword" runat="server" Width="266px" TextMode="Password"></asp:TextBox>
             <br />
             <br />
-            glglglglg<br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Ingresar" Width="272px" />
+            <asp:Button ID="LoginBTN" runat="server" Text="Ingresar" Width="272px" OnClick="Button1_Click" />
             <br />
-            <asp:Button ID="Button2" runat="server" Text="Crear Nueva Cuenta" Width="271px" />
+            <asp:Button ID="RegisterBTN" runat="server" Text="Crear Nueva Cuenta" Width="271px" OnClick="RegisterBTN_Click" />
+            <br />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Usuarios]"></asp:SqlDataSource>
+            <br />
+            <asp:Label ID="Label1" ForeColor="red" runat="server" Text="Label"></asp:Label>
         </div>
     
     </div>
