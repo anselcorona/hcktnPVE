@@ -124,6 +124,7 @@
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-2.2.4.min.js" />
+    <Content Include="VerIdea.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +174,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerIdea.aspx.cs">
+      <DependentUpon>VerIdea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerIdea.aspx.designer.cs">
+      <DependentUpon>VerIdea.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

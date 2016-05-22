@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hackathon", "..\..\..\..\Do
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "29219"
+		SlnRelativePath = "..\..\..\..\Documents\Visual Studio 2015\WebSites\Hackathon\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
