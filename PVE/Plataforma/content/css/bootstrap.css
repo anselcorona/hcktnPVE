@@ -240,6 +240,8 @@ th {
   }
   .navbar {
     display: none;
+    background-color: #2001BA;
+    background-image: none;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -3982,6 +3984,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+  color: white;
 }
 .nav > li > a {
   position: relative;
@@ -4171,6 +4174,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  background-color: #2001BA;
+  background-image: none;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -6758,3 +6763,19 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.navbar-custom {
+    background-color:#2001BA;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
