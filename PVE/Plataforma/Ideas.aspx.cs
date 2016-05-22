@@ -44,7 +44,25 @@ namespace Plataforma
         }
 
 
-        
 
+
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                int size = e.Row.Cells.Count;
+                if (e.Row.Cells[3].Text == "Aprobada")
+                {
+                    for (int i = 0; i < size; i++)
+                    {
+                        e.Row.BackColor = System.Drawing.ColorTranslator.FromHtml("#99ffbb");
+                    }
+                    e.Row.Cells[3].ForeColor = System.Drawing.Color.Green;
+                }
+
+               
+            }
+        }
     }
 }
