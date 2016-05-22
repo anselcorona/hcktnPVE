@@ -5,11 +5,16 @@
             
                                 <h3>&nbsp;Plataforma Virtual de Emprendimiento</h3>
                                 <br />
-                                La PVE se visualiza como el conjunto de tecnologías destinadas a promover fomentar desarrollar y gestionar el emprendimiento en la comunidad universitaria de PUCMM. Se espera que esta plataforma permita a los Gestores, Asesores y Mentores gestionar de manera efectiva el centro de emprendimiento, y a que a su vez Estudiantes, Profesores, Personal Administrativo y Egresados puedan someter sus ideas de negocios con el objetivo de ser evaluadas desarrolladas e incubadas en el centro de emprendimiento con miras a la creación de empresas sostenibles que contribuyen al desarrollo de la República Dominicana</span></span>.</div>
+            <div style="font-size:18px;">              
+             La PVE se visualiza como el conjunto de tecnologías destinadas a promover fomentar desarrollar y gestionar el emprendimiento en la comunidad universitaria de PUCMM. Se espera que esta plataforma permita a los Gestores, Asesores y Mentores gestionar de manera efectiva el centro de emprendimiento, y a que a su vez Estudiantes, Profesores, Personal Administrativo y Egresados puedan someter sus ideas de negocios con el objetivo de ser evaluadas desarrolladas e incubadas en el centro de emprendimiento con miras a la creación de empresas sostenibles que contribuyen al desarrollo de la República Dominicana</span></span>.<br />
+                               </div>
+                                   
+                                   <br />
+        </div>
                   
            
            
-        <div style="width:432px; float:none; margin-left:720px; ">
+        <div style="width:624px; float:none; margin-left:720px; ">
             <h3>&nbsp; Noticias</h3>
             Campus:<br />
             <div style="width:400px">
@@ -20,22 +25,23 @@
                 <asp:Button ID="Button2" runat="server" Height="39px" Text="CSTA" Width="102px" OnClick="Button2_Click" />
             </div>
                 </div>
-      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="3" DataSourceID="SqlDataSource1" AllowPaging="True" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" GridLines="Vertical" Width="399px">
-          <AlternatingRowStyle BackColor="#DCDCDC" />
+      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" AllowPaging="True" GridLines="None" Width="582px" ForeColor="#333333">
+          <AlternatingRowStyle BackColor="White" />
           <Columns>
               <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha" />
               <asp:BoundField DataField="Contenido" HeaderText="Contenido" SortExpression="Contenido" />
               <asp:BoundField DataField="Campus" HeaderText="Campus" SortExpression="Campus" />
           </Columns>
-          <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
-          <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
-          <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-          <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
-          <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
-          <SortedAscendingCellStyle BackColor="#F1F1F1" />
-          <SortedAscendingHeaderStyle BackColor="#0000A9" />
-          <SortedDescendingCellStyle BackColor="#CAC9C9" />
-          <SortedDescendingHeaderStyle BackColor="#000065" />
+          <EditRowStyle BackColor="#2461BF" />
+          <FooterStyle BackColor="#507CD1" ForeColor="White" Font-Bold="True" />
+          <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+          <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+          <RowStyle BackColor="#EFF3FB" />
+          <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+          <SortedAscendingCellStyle BackColor="#F5F7FB" />
+          <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+          <SortedDescendingCellStyle BackColor="#E9EBEF" />
+          <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Fecha], [Contenido], [Campus] FROM [Novedades] ORDER BY [Fecha] DESC"></asp:SqlDataSource>
         </div>

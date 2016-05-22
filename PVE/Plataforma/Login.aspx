@@ -5,20 +5,23 @@
     <div  style="align-content:center;">
     
         <div style="align-content:center; width:600px; margin: 0 auto;">
-            Conectate!<br />
-            <br />
-            Usuario:<br />
+            <h3>Conectate!</h3><br />
+            
+           <h5> Usuario:</h5>
+            <h5> <br />
             <asp:TextBox ID="TextUsername" runat="server" Width="268px"></asp:TextBox>
             <br />
             <br />
-            Contrasena:<br />
+            Contrasena:</h5>
+            <h5> <br /></h5>
             <asp:TextBox ID="TextPassword" runat="server" Width="268px" TextMode="Password"></asp:TextBox>
             <br />
             <br />
             <br />
-            <asp:Button ID="LoginBTN" runat="server" Text="Ingresar" Width="272px" OnClick="Button1_Click" />
+            <asp:Button ID="LoginBTN" runat="server" Text="Ingresar" Width="273px" OnClick="Button1_Click" Height="43px" />
             <br />
-            <asp:Button ID="RegisterBTN" runat="server" Text="Crear Nueva Cuenta" Width="271px" OnClick="RegisterBTN_Click1" />
+            <br />
+            <asp:Button ID="RegisterBTN" runat="server" Text="Crear Nueva Cuenta" Width="273px" Height="43px" OnClick="RegisterBTN_Click1" />
             <br />
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Usuarios]"></asp:SqlDataSource>
             <br />

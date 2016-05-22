@@ -2,7 +2,8 @@
 <asp:Content ContentPlaceHolderId="Body" runat="server">
     <div>
     <div style="margin-left:400px;">
-        Crea Tu Cuenta!<br />
+        <h3>&nbsp;</h3>
+        <h3>Crea Tu Cuenta!</h3><br />
         <br />
         Usuario:<br />
         <asp:TextBox ID="TextUsername" runat="server" Width="287px"></asp:TextBox>

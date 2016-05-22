@@ -3,7 +3,8 @@
 <asp:Content ContentPlaceHolderId="Body" runat="server">
 
     <p>
-        Validar Ideas</p>
+        <h2><strong>Validar Ideas</strong></h2>
+            </p>
     <p>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Codigo" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="1007px">
             <AlternatingRowStyle BackColor="White" />
@@ -34,27 +35,22 @@
     <p>
         &nbsp;</p>
     <p>
-        Detalles sobre la Idea:</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        Cantidad de Comentarios Buenos:<asp:Label ID="Label1" runat="server" Text="Label" ForeColor="#33CC33"></asp:Label>
+       <h3> Detalles sobre la Idea: </h3><h4>
+        Cantidad de Comentarios Buenos:&nbsp<asp:Label ID="Label1" runat="server" Text="Label" ForeColor="#33CC33"></asp:Label>
+        </h4>
+        <h4>
+        Cantidad de Comentarios Malos:&nbsp<asp:Label ID="Label2" runat="server" Text="Label" ForeColor="Red"></asp:Label>
+        </h4>
     </p>
-    <p>
-        Cantidad de Comentarios Malos:<asp:Label ID="Label2" runat="server" Text="Label" ForeColor="Red"></asp:Label>
-    </p>
-    <p>
-        &nbsp;</p>
-    <p>
-        Cambiar Estado</p>
-    <p>
-        &nbsp;</p>
+       <h4> Cambiar Estado
+
+       </h4>
     <div style="width:400px">
         <div style="width:100px; float:left">
-            <asp:Button ID="Button1" runat="server" Font-Bold="True" ForeColor="Red" Height="39px"  Text="Declinar" Width="102px" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Font-Bold="True" ForeColor="Red" Height="39px"  Text="Declinar" Width="102px" OnClick="Button1_Click" Font-Size="16px" />
         </div>
         <div style="width:100px; float:none; margin-left:110px">
-            <asp:Button ID="Button2" runat="server" Font-Bold="True" ForeColor="#33CC33" Height="39px" Text="Aprobar" Width="102px" OnClick="Button2_Click" />
+            <asp:Button ID="Button2" runat="server" Font-Bold="True" ForeColor="#33CC33" Height="39px" Text="Aprobar" Width="102px" OnClick="Button2_Click" Font-Size="16px" />
         </div>
     </div>
     <p>

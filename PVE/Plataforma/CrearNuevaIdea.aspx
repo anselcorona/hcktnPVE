@@ -1,11 +1,12 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="CrearNuevaIdea.aspx.cs" Inherits="Plataforma.CrearNuevaIdea" %>
 
 <asp:Content ContentPlaceHolderId="Body" runat="server">
-
+<div>
+    <div style="width:700px; margin-left:400px">
     <p>
-        Agregar Nueva Idea de Emprendimiento</p>
-    <p>
-        &nbsp;</p>
+       <h3> Agregar Nueva Idea de Emprendimiento
+           </h3>
+           </p>
     <p>
         Breve Descripcion de la idea:</p>
     <p>
@@ -88,6 +89,7 @@
     <asp:Button ID="Button1" runat="server" Height="46px" Text="Agregar Idea" Width="292px" OnClick="Button1_Click" />
     <p>
         &nbsp;</p>
-
+        </div>
+    </div>
  </asp:Content>
 

@@ -85,7 +85,7 @@
                     </div>
                  <div class="panel panel-primary text-center no-boder bg-color-brown">
                             
-                            <div class="panel-footer back-footer-brown">
+                            <div class="panel-footer back-footer-blue">
                                 <asp:Button BackColor="Transparent" BorderColor="Transparent" ID="Button2" runat="server" Text="Agregar Noticias" OnClick="Button2_Click" /> 
 
                             </div>
@@ -93,7 +93,7 @@
 
                  <div class="panel panel-primary text-center no-boder bg-color-brown">
                            
-                            <div class="panel-footer back-footer-brown">
+                            <div class="panel-footer back-footer-green">
                                 <asp:Button ID="Button1" BackColor="Transparent" BorderColor="Transparent"  runat="server" Text="Validar Ideas" OnClick="Button1_Click" /> 
 
                             </div>

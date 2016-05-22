@@ -1,10 +1,10 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="AddComment.aspx.cs" Inherits="Plataforma.AddComment" %>
 <asp:Content ContentPlaceHolderId="Body" runat="server">
-    \
-        
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        
-    </h3>
+    <div style="align-items:center; width:1100px;">
+       <div style="margin-left:200px; width:600px"> 
+        <asp:Label ID="Label1" runat="server" Font-Size="22px" Text="Label"></asp:Label>
+        <br />
+   <br />
     Agregar un nuevo comentario:<br />
     <br />
     Tipo de Comentario.<br />
@@ -21,6 +21,7 @@
     <asp:Button ID="Button1" runat="server" Height="45px" OnClick="Button1_Click" Text="Agregar Comentario" Width="227px" />
     <br />
     <br />
-
+           </div>
+        </div>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Comentarios]"></asp:SqlDataSource>
     </asp:Content>
