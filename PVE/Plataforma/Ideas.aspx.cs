@@ -40,6 +40,7 @@ namespace Plataforma
             Session["Idea"] = GridView1.SelectedRow.Cells[0].Text;
 
             // LINK A NUEVA PAGINA DE DIFERENTES IDEAS
+            Server.Transfer("VerIdea.aspx");
             
         }
 

@@ -12,6 +12,16 @@ namespace Plataforma
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            try
+            {
+                string user = Session["User"].ToString();
+            }
+            catch
+            {
+                Server.Transfer("Login.aspx");
+            }
+
+            SqlDataSource1.SelectCommand = "SELECT[Codigo], [Fecha], [Contenido], [Autor] FROM[IdeasEmprendedoras] where codigo =" + Session["Idea"].ToString();
         }
     }
 }
