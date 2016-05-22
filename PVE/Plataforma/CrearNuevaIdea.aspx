@@ -1,4 +1,4 @@
-﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="CrearNuevaIdea.aspx.cs" Inherits="Plataforma.CrearNuevaIdea" %>
+﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeBehind="CrearNuevaIdea.aspx.cs" Inherits="Plataforma.CrearNuevaIdea" %>
 
 <asp:Content ContentPlaceHolderId="Body" runat="server">
 
