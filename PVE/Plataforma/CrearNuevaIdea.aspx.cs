@@ -21,28 +21,27 @@ namespace Plataforma
                 Server.Transfer("Login.aspx");
             }
 
-            Label1.Visible = false;
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int id = ObtenerCantidadIdeas();
+            int id = ObtenerCantidadIdeas()+1;
             try
             {
-                AgregarIdea(DescripcionTXT.Text, ContenidoTXT.Text, Session["User"].ToString(), ObtenerCantidadIdeas());
+                AgregarIdea(DescripcionTXT.Text, TXTProblema.Text,TextSoluciones.Text,TXTAlternativas.Text,TextMetricas.Text,TextPropocision.Text,TextConceptos.Text,TextVentajas.Text,TextCanales.Text,TextSegmentos.Text,TextPrimerosAdop.Text,TextEstructura.Text,TextFlujo.Text, Session["User"].ToString(), ObtenerCantidadIdeas());
             }
             catch {
-                Label1.Text = "Error";
+             
             }
 
         }
 
-        private void AgregarIdea(string desc, string cont, string user, int codigo) {
+        private void AgregarIdea(string desc, string problema,string soluciones,string alternativas,string metrics,string Proposicion,string conceptos,string ventajas,string canales,string segmentos,string adopters,string Estructura,string revenue, string user, int codigo) {
             SqlConnection con = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
            
-                SqlCommand cmd = new SqlCommand("Insert into IdeasEmprendedoras(Codigo,Descripcion,Contenido,Autor,Estado,Fecha) values(" + codigo + ",'" + desc + "','" + cont + "','" + user + "','Pendiente','" +DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")+"')", con);
+                SqlCommand cmd = new SqlCommand("Insert into IdeasEmprendedoras(Codigo,Descripcion,Problemas,Soluciones,Alternativas,Metrics,Proposicion,Conceptos,VentajasInjustas,Canales,SegmentosClientes,Adopters,EstructuraCosto,RevenueStreams,Autor,Estado,Fecha) values(" + codigo + ",'" + desc + "','" + problema + "','" + soluciones + "','" + alternativas + "','" + metrics + "','" + Proposicion + "','" + conceptos + "','" + ventajas + "','" + canales + "','" + segmentos + "','" + adopters + "','" + Estructura + "','" + revenue + "','" + user + "','Pendiente','" +DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")+"')", con);
 
                 try
 
@@ -60,7 +59,7 @@ namespace Plataforma
                 catch
 
                 {
-                Label1.Text = "Favor Completar todos los campos correctamente";
+               //NADA PASA
                    
 
                 }

@@ -2,32 +2,37 @@
 <asp:Content ContentPlaceHolderId="Body" runat="server">
     <div>
         <div style="margin-left:50px">
-    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Codigo" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" Height="213px" Width="1432px">
+    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Codigo" DataSourceID="SqlDataSource3" ForeColor="Black" GridLines="Vertical" Height="213px" Width="1432px" >
         <AlternatingRowStyle BackColor="White" />
         <EditRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
         <Fields>
             <asp:BoundField DataField="Codigo" HeaderText="Codigo" ReadOnly="True" SortExpression="Codigo" >
-            <HeaderStyle Font-Bold="True" Font-Size="18px" HorizontalAlign="Center" />
-            <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
             <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha" >
-            <HeaderStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Size="18px" HorizontalAlign="Center" Width="150px" />
-            <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
-            <asp:BoundField DataField="Contenido" HeaderText="Contenido" SortExpression="Contenido" >
-            <HeaderStyle Font-Bold="True" Font-Size="18px" HorizontalAlign="Center" Width="150px" />
-            <ItemStyle HorizontalAlign="Center" Wrap="False" />
+            <asp:BoundField DataField="Problemas" HeaderText="Problemas" SortExpression="Problemas" >
             </asp:BoundField>
-            <asp:BoundField DataField="Autor" HeaderText="Autor" SortExpression="Autor" >
-            <HeaderStyle Font-Bold="True" Font-Size="18px" HorizontalAlign="Center" />
-            <ItemStyle Font-Bold="True" Font-Size="15px" HorizontalAlign="Center" />
+            <asp:BoundField DataField="Alternativas" HeaderText="Alternativas" SortExpression="Alternativas" >
             </asp:BoundField>
+            <asp:BoundField DataField="Soluciones" HeaderText="Soluciones" SortExpression="Soluciones" />
+            <asp:BoundField DataField="Metrics" HeaderText="Metrics" SortExpression="Metrics" />
+            <asp:BoundField DataField="Proposicion" HeaderText="Proposicion" SortExpression="Proposicion" />
+            <asp:BoundField DataField="Conceptos" HeaderText="Conceptos" SortExpression="Conceptos" />
+            <asp:BoundField DataField="VentajasInjustas" HeaderText="VentajasInjustas" SortExpression="VentajasInjustas" />
+            <asp:BoundField DataField="Canales" HeaderText="Canales" SortExpression="Canales" />
+            <asp:BoundField DataField="SegmentosClientes" HeaderText="SegmentosClientes" SortExpression="SegmentosClientes" />
+            <asp:BoundField DataField="Adopters" HeaderText="Adopters" SortExpression="Adopters" />
+            <asp:BoundField DataField="EstructuraCosto" HeaderText="EstructuraCosto" SortExpression="EstructuraCosto" />
+            <asp:BoundField DataField="RevenueStreams" HeaderText="RevenueStreams" SortExpression="RevenueStreams" />
+            <asp:BoundField DataField="Autor" HeaderText="Autor" SortExpression="Autor" />
+            <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
         </Fields>
         <FooterStyle BackColor="#CCCC99" />
         <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="#68b5ff" ForeColor="Black" HorizontalAlign="Right" />
         <RowStyle BackColor="#68b5ff" />
     </asp:DetailsView>
+            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Codigo], [Fecha], [Problemas], [Alternativas], [Soluciones], [Metrics], [Proposicion], [Conceptos], [VentajasInjustas], [Canales], [SegmentosClientes], [Adopters], [EstructuraCosto], [RevenueStreams], [Autor], [Estado] FROM [IdeasEmprendedoras]"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Codigo], [Fecha], [Contenido], [Autor] FROM [IdeasEmprendedoras]"></asp:SqlDataSource>
             <br />
             <br />
