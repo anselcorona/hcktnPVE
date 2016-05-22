@@ -25,33 +25,54 @@
         </Fields>
         <FooterStyle BackColor="#CCCC99" />
         <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-        <RowStyle BackColor="#F7F7DE" />
+        <PagerStyle BackColor="#68b5ff" ForeColor="Black" HorizontalAlign="Right" />
+        <RowStyle BackColor="#68b5ff" />
     </asp:DetailsView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Codigo], [Fecha], [Contenido], [Autor] FROM [IdeasEmprendedoras]"></asp:SqlDataSource>
             <br />
             <br />
             <div style="width:1300px">
             <div style="width:200px; float:right">
-            <asp:Button ID="Button1" runat="server" Height="35px" Text="Agregar Nuevo Comentario" Width="250px" />
+            <asp:Button ID="Button1" runat="server" Height="35px" Text="Agregar Nuevo Comentario" Width="250px" OnClick="Button1_Click" />
                 </div>
                 </div>
+            <br />
+            <br />
+            Ordenar los Comentarios por Tipo:<br />
+    <div style="width:600px;">
+        <div style="width:200px; float:left">
+    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="31px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="265px">
+        <asp:ListItem>Todos los Comentarios</asp:ListItem>
+        <asp:ListItem>Aportes</asp:ListItem>
+        <asp:ListItem>Contraargumentos</asp:ListItem>
+    
+    </asp:DropDownList>
+        </div>
+
+    <div style="width:200px; float:right">
+    </div>
+        </div>
+            <br />
             <br />
          <br />
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" Width="1430px" OnRowDataBound="GridView1_RowDataBound" AllowPaging="True">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:BoundField DataField="Autor" HeaderText="_Autor"  SortExpression="Autor">
-                    <HeaderStyle  Height="50px" HorizontalAlign="Center" BorderColor="#666666"  />
-                    <ItemStyle BorderColor="#666666" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Center" Width="150px" />
+                    <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha">
+                    <HeaderStyle Font-Size="16px" Height="50px" />
+                    <ItemStyle Width="200px" Font-Size="14px"/>
                     </asp:BoundField>
-                    <asp:BoundField DataField="Contenido" HeaderText="_Contenido" SortExpression="Contenido">
-                    <HeaderStyle HorizontalAlign="Center" BorderColor="#666666" />
-                    <ItemStyle BorderColor="#666666" BorderStyle="Dashed" BorderWidth="1px" HorizontalAlign="Center" />
+                    <asp:BoundField DataField="Autor" HeaderText="Autor" SortExpression="Autor">
+                    <HeaderStyle Font-Size="16px" Height="50px" />
+                    <ItemStyle Width="150px" Font-Size="14px"/>
                     </asp:BoundField>
-                    <asp:BoundField DataField="Tipo" HeaderText="_Tipo" SortExpression="Tipo">
-                    <HeaderStyle HorizontalAlign="Center" BorderColor="#666666" />
-                    <ItemStyle BorderColor="#666666" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Left" Width="150px" />
+                    <asp:BoundField DataField="Contenido" HeaderText="Contenido"  SortExpression="Contenido">
+                        <HeaderStyle Font-Size="16px" Height="50px" />
+                    <ItemStyle Width="600px" Font-Size="14px"/>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="Tipo" HeaderText="Tipo" SortExpression="Tipo">
+                        <HeaderStyle Font-Size="16px" Height="50px" />
+                    <ItemStyle Width="100px" Font-Size="14px"/>
                     </asp:BoundField>
                 </Columns>
                 <EditRowStyle BackColor="#7C6F57" />
@@ -65,7 +86,10 @@
                 <SortedDescendingCellStyle BackColor="#D4DFE1" />
                 <SortedDescendingHeaderStyle BackColor="#15524A" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Autor], [Contenido], [Tipo] FROM [Comentarios]"></asp:SqlDataSource>
+            <br />
+            <br />
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Autor], [Contenido], [Tipo], [Fecha] FROM [Comentarios]"></asp:SqlDataSource>
+
 </div>
     </div>
 </asp:Content>
