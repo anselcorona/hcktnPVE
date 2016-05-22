@@ -22,6 +22,36 @@ namespace Plataforma
             }
 
             SqlDataSource1.SelectCommand = "SELECT[Codigo], [Fecha], [Contenido], [Autor] FROM[IdeasEmprendedoras] where codigo =" + Session["Idea"].ToString();
+            SqlDataSource2.SelectCommand = "SELECT [Autor], [Contenido], [Tipo] FROM [Comentarios] where IdeaImplicada =" + Session["Idea"].ToString();
         }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+           
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                int size = e.Row.Cells.Count;
+                if (e.Row.Cells[2].Text == "Aporte")
+                {
+                    for (int i = 0; i < size; i++)
+                    {
+                        e.Row.BackColor = System.Drawing.ColorTranslator.FromHtml("#99ffbb");
+                    }
+                    e.Row.Cells[2].ForeColor = System.Drawing.Color.Green;
+                }
+                else {
+
+
+                    for (int i = 0; i < size; i++)
+                    {
+                        e.Row.BackColor = System.Drawing.ColorTranslator.FromHtml("#ff7575");
+                    }
+                    e.Row.Cells[2].ForeColor = System.Drawing.Color.Red;
+                }
+
+
+            
+        }
+    }
     }
 }
