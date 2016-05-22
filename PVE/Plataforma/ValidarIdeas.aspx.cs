@@ -11,13 +11,17 @@ public partial class ValidarIdeas : System.Web.UI.Page
     public string CodigoSelect;
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Label1.Visible = false;
+        Label2.Visible = false;
     }
 
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         CodigoSelect = GridView1.SelectedRow.Cells[1].Text.ToString();
+        Session["Idea"] = CodigoSelect;
         string helper = CodigoSelect;
+        Label1.Visible = true;
+        Label2.Visible = true;
         Label1.Text = ObtenerCantidadComentariosBuenos(helper).ToString();
         Label2.Text = ObtenerCantidadComentariosMalos(helper).ToString();
     }
@@ -58,11 +62,12 @@ public partial class ValidarIdeas : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
-        SqlCommand cmd = new SqlCommand("update IdeaEmprendedora set Estado = 'Declinada' where codigo = " + CodigoSelect, con);
+        
 
         try
 
         {
+            SqlCommand cmd = new SqlCommand("update IdeasEmprendedoras set Estado = 'Declinada' where codigo = " + Session["Idea"].ToString(), con);
             con.Open();
             cmd.ExecuteNonQuery();
 
@@ -73,11 +78,11 @@ public partial class ValidarIdeas : System.Web.UI.Page
             Server.Transfer("AdminPanel.aspx", true);
         }
 
-        catch
+        catch(Exception se)
 
         {
 
-
+           
 
         }
 
@@ -88,11 +93,12 @@ public partial class ValidarIdeas : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
-        SqlCommand cmd = new SqlCommand("update IdeaEmprendedora set Estado = 'Aprobada' where codigo = " + CodigoSelect, con);
-
+       
         try
 
         {
+            SqlCommand cmd = new SqlCommand("update IdeasEmprendedoras set Estado = 'Aprobada' where codigo = " + Session["Idea"].ToString(), con);
+
             con.Open();
             cmd.ExecuteNonQuery();
 

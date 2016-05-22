@@ -11,7 +11,7 @@ namespace Plataforma
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Autor] = '"+Session["User"].ToString()+"' ORDER BY [Fecha] DESC";
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -62,19 +62,19 @@ namespace Plataforma
 
             if (index == 2)
             {
-                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Declinada' ORDER BY [Fecha] DESC";
+                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Declinada' and [Autor] = '" + Session["User"].ToString() + "' ORDER BY [Fecha] DESC";
             }
             else if (index == 1)
             {
-                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Pendiente' ORDER BY [Fecha] DESC";
+                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Pendiente' and [Autor] = '" + Session["User"].ToString() + "' ORDER BY [Fecha] DESC";
             }
             else if (index == 0)
             {
-                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] ORDER BY [Fecha] DESC";
+                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Autor] = '" + Session["User"].ToString() + "' ORDER BY [Fecha] DESC";
             }
             else
             {
-                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Aprobada' ORDER BY [Fecha] DESC";
+                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Aprobada' and [Autor] = '" + Session["User"].ToString() + "' ORDER BY [Fecha] DESC";
             }
         }
     }
