@@ -1,7 +1,7 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Plataforma.Register" %>
 <asp:Content ContentPlaceHolderId="Body" runat="server">
     <div>
-    
+    <div style="margin-left:400px;">
         Crea Tu Cuenta!<br />
         <br />
         Usuario:<br />
@@ -33,7 +33,7 @@
         <br />
         <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="Label"></asp:Label>
         <br />
-    
+    </div>
     </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Comentarios]"></asp:SqlDataSource>
     

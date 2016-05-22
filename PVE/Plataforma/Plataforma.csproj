@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminNoticias.aspx" />
     <Content Include="AdminPanel.aspx" />
     <Content Include="assets\css\demo.css" />
     <Content Include="assets\css\get-shit-done.css" />
@@ -189,6 +190,10 @@
     </Compile>
     <Compile Include="AddComment.aspx.designer.cs">
       <DependentUpon>AddComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNoticias.aspx.cs">
+      <DependentUpon>AdminNoticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminPanel.aspx.cs">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
