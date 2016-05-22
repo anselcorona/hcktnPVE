@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="Principal" %>
 
 <!DOCTYPE html>
 
@@ -31,13 +31,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Inicio</a></li>
+        <li class="active"><a href="Home.aspx">Inicio</a></li>
         <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Ideas</a></li>
+        <li><a href="Ideas.aspx">Ideas</a></li>
       </ul>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Conectate!</a></li>
+            <li>
+            <asp:HyperLink ID="HyperLink1" runat="server">
+                <asp:Label ID="LoginPanelLabel" runat="server" Text="Label"></asp:Label></asp:HyperLink>
+                </li>
         </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -4285,6 +4285,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  color: #fff;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -6776,6 +6777,18 @@ button.close {
     color: #ffffff;
     background-color:transparent;
 }
+
+.navbar-custom .navbar-header > p, .navbar-header >  p:hover, .navbar-header  > p:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-header > p, .navbar-header >  p:link, .navbar-header  > p:link {
+    color: #ffffff;
+    background-color:transparent;
+}
+
 .navbar-custom .navbar-brand {
     color:#eeeeee;
 }
+
