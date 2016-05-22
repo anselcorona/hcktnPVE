@@ -1,14 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Plataforma.Register" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Plataforma.Register" %>
+<asp:Content ContentPlaceHolderId="Body" runat="server">
+<div>
     
         Crea Tu Cuenta!<br />
         <br />
@@ -46,6 +38,6 @@
     
     </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Comentarios]"></asp:SqlDataSource>
-    </form>
-</body>
-</html>
+    
+  </asp:Content>
+

@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPanel.aspx" />
     <Content Include="assets\css\demo.css" />
     <Content Include="assets\css\get-shit-done.css" />
     <Content Include="assets\css\gsdk-base.css" />
@@ -187,9 +188,16 @@
     <Compile Include="AddComment.aspx.designer.cs">
       <DependentUpon>AddComment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel.aspx.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="CrearNuevaIdea.aspx.cs">
       <DependentUpon>CrearNuevaIdea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearNuevaIdea.aspx.designer.cs">
+      <DependentUpon>CrearNuevaIdea.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -214,7 +222,6 @@
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>

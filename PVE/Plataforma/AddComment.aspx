@@ -24,6 +24,6 @@
     <asp:Button ID="Button1" runat="server" Height="45px" OnClick="Button1_Click" Text="Agregar Comentario" Width="227px" />
     <br />
     <br />
-    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Comentarios]"></asp:SqlDataSource>
     </asp:Content>

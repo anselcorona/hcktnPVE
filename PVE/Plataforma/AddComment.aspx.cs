@@ -23,7 +23,7 @@ namespace Plataforma
             }
 
 
-            Label1.Text ="Idea de Emprendimiento: "+ GetValue("Descripcion");
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Plataforma
             SqlConnection con = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
 
-            SqlCommand cmd = new SqlCommand("Insert into Comentarios(Codigo,Autor,Contenido,IdeaImplicada,Tipo) values(" + codigo + ",'" + Session["User"].ToString() + "','" + coment + "','" + Session["Idea"] + "','" + tipo + "')", con);
+            SqlCommand cmd = new SqlCommand("Insert into Comentarios(Codigo,Autor,Contenido,IdeaImplicada,Tipo,Fecha) values(" + codigo + ",'" + Session["User"].ToString() + "','" + coment + "','" + Session["Idea"] + "','" + tipo + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')", con);
 
                 try
 
@@ -55,8 +55,7 @@ namespace Plataforma
 
                 {
 
-                    
-                    Label1.Text = "Datos Invalidos Agregados, Verifique Por Favor";
+            
 
                 }
             }

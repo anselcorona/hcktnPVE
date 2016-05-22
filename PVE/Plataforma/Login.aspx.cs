@@ -66,7 +66,9 @@ namespace Plataforma
             }
         }
 
-        protected void RegisterBTN_Click(object sender, EventArgs e)
+       
+
+        protected void RegisterBTN_Click1(object sender, EventArgs e)
         {
             Server.Transfer("Register.aspx");
         }

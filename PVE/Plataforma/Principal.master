@@ -1,4 +1,4 @@
-﻿
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -61,14 +61,16 @@
                         <li class="divider"></li>
                         <li><a href="#">Nosotros</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Ideas</a></li>
+                        <li><a href="Ideas.aspx">Ideas</a></li>
                       </ul>
                 </li>
               </ul>
               
               <ul class="nav navbar-nav ">
                    <li>
-                            <a class="btn btn-round btn-default" href="#"> Conectate!</a> 
+                        <asp:HyperLink CssClass="btn btn-round btn-default" ID="HyperLink1" runat="server">
+                <asp:Label ID="LoginPanelLabel" runat="server" Text="Label"></asp:Label></asp:HyperLink>
+                            
                     </li>
                  
                </ul>
