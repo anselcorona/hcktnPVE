@@ -74,8 +74,5 @@ public partial class AdminNoticias : System.Web.UI.Page
 
     }
 
-    protected void Calendar1_SelectionChanged(object sender, EventArgs e)
-    {
-        Label1.Text = Calendar1.SelectedDate.ToLongDateString();
-    }
+
 }

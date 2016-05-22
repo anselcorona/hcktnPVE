@@ -1,6 +1,6 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="AddComment.aspx.cs" Inherits="Plataforma.AddComment" %>
 <asp:Content ContentPlaceHolderId="Body" runat="server">
- \
+    \
         
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         
