@@ -23,7 +23,8 @@ namespace Plataforma
             }
             try
             {
-                SqlDataSource1.SelectCommand = "SELECT[Codigo], [Fecha], [Contenido], [Autor] FROM[IdeasEmprendedoras] where codigo =" + Session["Idea"].ToString();
+                
+                SqlDataSource3.SelectCommand = "SELECT [Codigo], [Fecha], [Problemas], [Alternativas], [Soluciones], [Metrics], [Proposicion], [Conceptos], [VentajasInjustas], [Canales], [SegmentosClientes], [Adopters], [EstructuraCosto], [RevenueStreams], [Autor], [Estado] FROM [IdeasEmprendedoras] where [Codigo] = " + Session["Idea"].ToString();
                 SqlDataSource2.SelectCommand = "SELECT [Autor], [Contenido], [Tipo], [Fecha] FROM [Comentarios] where IdeaImplicada =" + Session["Idea"].ToString() + " ORDER BY [Fecha] DESC";
             }
             catch { Server.Transfer("Ideas.aspx"); }
@@ -84,6 +85,8 @@ namespace Plataforma
             }
          
         }
+
+
 
       
     }
