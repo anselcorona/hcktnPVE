@@ -1,5 +1,8 @@
-﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeBehind="AddComment.aspx.cs" Inherits="Plataforma.AddComment" %>
+﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="AddComment.aspx.cs" Inherits="Plataforma.AddComment" %>
 <asp:Content ContentPlaceHolderId="Body" runat="server">
+    <h3>
+        
+        &nbsp;</h3>
     <h3>
         
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

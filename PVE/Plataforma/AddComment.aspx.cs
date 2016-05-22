@@ -23,12 +23,12 @@ namespace Plataforma
             }
 
 
-            Label1.Text = GetValue("Descripcion");
+            Label1.Text ="Idea de Emprendimiento: "+ GetValue("Descripcion");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            AgregarComentario(DropDownList1.SelectedItem.Text,TextBox1.Text,(ObtenerCantidadComentarios()+1).ToString());
         }
 
         private void AgregarComentario(string tipo, string coment, string codigo)
@@ -48,7 +48,7 @@ namespace Plataforma
                     con.Close();
 
                     //Se agrego Correctamente!
-                    Server.Transfer("Login.aspx", true);
+                    Server.Transfer("Home.aspx", true);
                 }
 
                 catch
