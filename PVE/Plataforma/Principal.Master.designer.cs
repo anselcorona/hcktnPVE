@@ -39,6 +39,24 @@ public partial class Principal {
     protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
     
     /// <summary>
+    /// linkGoSomewhere control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.LinkButton linkGoSomewhere;
+    
+    /// <summary>
+    /// LabelSignOut control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label LabelSignOut;
+    
+    /// <summary>
     /// HyperLink1 control.
     /// </summary>
     /// <remarks>
@@ -57,15 +75,6 @@ public partial class Principal {
     protected global::System.Web.UI.WebControls.Label LoginPanelLabel;
     
     /// <summary>
-    /// logo control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ContentPlaceHolder logo;
-    
-    /// <summary>
     /// Body control.
     /// </summary>
     /// <remarks>
@@ -73,13 +82,4 @@ public partial class Principal {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.WebControls.ContentPlaceHolder Body;
-    
-    /// <summary>
-    /// Footer control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
 }

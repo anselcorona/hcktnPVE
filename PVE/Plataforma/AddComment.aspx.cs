@@ -48,7 +48,7 @@ namespace Plataforma
                     con.Close();
 
                     //Se agrego Correctamente!
-                    Server.Transfer("Home.aspx", true);
+                    Server.Transfer("VerIdea.aspx", true);
                 }
 
                 catch

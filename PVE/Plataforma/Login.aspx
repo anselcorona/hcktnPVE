@@ -2,7 +2,7 @@
 
 
 <asp:Content ContentPlaceHolderId="Body" runat="server">
- <div  style="align-content:center;">
+    <div  style="align-content:center;">
     
         <div style="align-content:center; width:600px; margin: 0 auto;">
             Conectate!<br />

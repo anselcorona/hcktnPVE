@@ -1,6 +1,6 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Plataforma.Register" %>
 <asp:Content ContentPlaceHolderId="Body" runat="server">
-<div>
+    <div>
     
         Crea Tu Cuenta!<br />
         <br />
@@ -9,11 +9,10 @@
         <br />
         <br />
         Nombre:<br />
-        <br />
         <asp:TextBox ID="TextName" runat="server" Width="286px"></asp:TextBox>
         <br />
-        Apellido:<br />
         <br />
+        Apellido:<br />
         <asp:TextBox ID="TextApellido" runat="server" Width="283px"></asp:TextBox>
         <br />
         <br />
@@ -26,7 +25,6 @@
         <br />
         <br />
         Repetir Contrasena:<br />
-        <br />
         <asp:TextBox ID="TextPass2" runat="server" TextMode="Password" Width="273px"></asp:TextBox>
         <br />
         <br />

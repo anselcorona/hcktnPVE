@@ -22,11 +22,16 @@ public partial class Principal : System.Web.UI.MasterPage
         {
             LoginPanelLabel.Text = "Conectate!";
             HyperLink1.NavigateUrl = "Login.aspx";
+           
         }
         else
         {
             LoginPanelLabel.Text = "Mi Panel";
-            HyperLink1.NavigateUrl = "#";
-        }
-    }
+            HyperLink1.NavigateUrl = "MiPanel.aspx";
+            
+
+        } }
+
+   
 }
+

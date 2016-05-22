@@ -54,7 +54,7 @@ namespace Plataforma
                     {
                         e.Row.BackColor = System.Drawing.ColorTranslator.FromHtml("#ff7575");
                     }
-                    e.Row.Cells[3].ForeColor = System.Drawing.Color.Red;
+                    e.Row.Cells[3].ForeColor = System.Drawing.ColorTranslator.FromHtml("#6f0000");
                 }
 
 
