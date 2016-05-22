@@ -113,6 +113,7 @@
     </Content>
     <Content Include="CrearNuevaIdea.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Ideas.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ideas.aspx.cs">
+      <DependentUpon>Ideas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ideas.aspx.designer.cs">
+      <DependentUpon>Ideas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
