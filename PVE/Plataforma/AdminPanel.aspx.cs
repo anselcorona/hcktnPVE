@@ -119,4 +119,9 @@ public partial class AdminPanel : System.Web.UI.Page
     {
         Server.Transfer("AdminNoticias.aspx");
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("ValidarIdeas.aspx");
+    }
 }

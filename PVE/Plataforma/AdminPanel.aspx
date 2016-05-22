@@ -94,7 +94,7 @@
                  <div class="panel panel-primary text-center no-boder bg-color-brown">
                            
                             <div class="panel-footer back-footer-brown">
-                                <asp:Button ID="Button1" BackColor="Transparent" BorderColor="Transparent"  runat="server" Text="Validar Ideas" /> 
+                                <asp:Button ID="Button1" BackColor="Transparent" BorderColor="Transparent"  runat="server" Text="Validar Ideas" OnClick="Button1_Click" /> 
 
                             </div>
                         </div>
