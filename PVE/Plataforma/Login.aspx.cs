@@ -29,7 +29,7 @@ namespace Plataforma
                 //Loop through your results
                 while (dataReader.Read())
                 {
-                    Passworddd = (Convert.ToString(dataReader["Password"]));
+                    Passworddd = (Convert.ToString(dataReader["Contrasena"]));
                 }
 
                 if (Passworddd != null)
@@ -56,7 +56,7 @@ namespace Plataforma
             if (usuario != null)
             {
                 //ir a otra pagina
-                Server.Transfer("Default2.aspx");
+                Server.Transfer("Home.aspx");
             }
 
             else
@@ -64,6 +64,11 @@ namespace Plataforma
                 Label1.Visible = true;
                 Label1.Text = "Datos Incorrectos Introducidos, Favor Corregir";
             }
+        }
+
+        protected void RegisterBTN_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Register.aspx");
         }
     }
 
