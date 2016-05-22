@@ -6783,10 +6783,11 @@ button.close {
     background-color:transparent;
 }
 
-.navbar-custom .navbar-header > p, .navbar-header >  p:link, .navbar-header  > p:link {
+.navbar-custom .navbar-nav > li > a, .navbar-nav > li >  a, .navbar-nav  > li > a {
     color: #ffffff;
     background-color:transparent;
 }
+
 
 .navbar-custom .navbar-brand {
     color:#eeeeee;
