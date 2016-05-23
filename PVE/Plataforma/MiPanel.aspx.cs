@@ -11,8 +11,12 @@ namespace Plataforma
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Autor] = '"+Session["User"].ToString()+"' ORDER BY [Fecha] DESC";
-        }
+            try
+            {
+                SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Autor] = '" + Session["User"].ToString() + "' ORDER BY [Fecha] DESC";
+            }
+            catch { Server.Transfer("Login.aspx"); }
+            }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -76,6 +80,12 @@ namespace Plataforma
             {
                 SqlDataSource1.SelectCommand = "SELECT [Codigo], [Fecha], [Descripcion], [Estado] FROM [IdeasEmprendedoras] where [Estado]='Aprobada' and [Autor] = '" + Session["User"].ToString() + "' ORDER BY [Fecha] DESC";
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["User"] = null;
+            Server.Transfer("Login.aspx");
         }
     }
 }

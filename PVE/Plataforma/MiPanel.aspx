@@ -1,7 +1,11 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="MiPanel.aspx.cs" Inherits="Plataforma.MiPanel" %>
 <asp:Content ContentPlaceHolderId="Body" runat="server">
+    <h3>&nbsp;</h3>
+    
+        <asp:Button ID="Button1" runat="server" Height="48px" OnClick="Button1_Click" Text="Desconectarse" Width="372px" Font-Size="12pt" />
+    
+    <p>&nbsp;</p>
     <h3>Mi Panel</h3>
-    <br />
  
     <br />
     Mis Ideas de Emprendimiento:<br />

@@ -80,8 +80,7 @@ namespace Plataforma
                 SqlDataSource2.SelectCommand = "SELECT [Autor], [Contenido], [Tipo], [Fecha] FROM [Comentarios] where IdeaImplicada =" + Session["Idea"].ToString() + "and Tipo='Aporte' ORDER BY [Fecha] DESC";
             }
             else if (index == 0) {
-                SqlDataSource2.SelectCommand = "SELECT [Autor], [Contenido], [Tipo], [Fecha] FROM [Comentarios] where IdeaImplicada =" + Session["Idea"].ToString() + " and Tipo='Aporte' or Tipo ='Contraargumento' ORDER BY [Fecha] DESC";
-
+                SqlDataSource2.SelectCommand = "SELECT [Autor], [Contenido], [Tipo], [Fecha] FROM [Comentarios] where IdeaImplicada =" + Session["Idea"].ToString() + "and (Tipo='Aporte' or Tipo='Contraargumento') ORDER BY [Fecha] DESC";
             }
          
         }

@@ -1,2 +1,8 @@
-﻿body {
+﻿footer{
+    text-align: center;
+    background-color:  	#0062c3 ;
+    color: #fff;
+    font-size:medium;
+    display:block;
+    padding: 10px;
 }

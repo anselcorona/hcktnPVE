@@ -2,7 +2,7 @@
 <asp:Content ContentPlaceHolderId="Body" runat="server">
     <div style="align-items:center; width:1100px;">
        <div style="margin-left:200px; width:600px"> 
-        <asp:Label ID="Label1" runat="server" Font-Size="22px" Text="Label"></asp:Label>
+       
         <br />
    <br />
     Agregar un nuevo comentario:<br />

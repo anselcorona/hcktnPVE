@@ -1,22 +1,24 @@
 ﻿<%@ Page MasterPageFile="Principal.master" Language="C#" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Plataforma.Home" %>
+
+
 <asp:Content ContentPlaceHolderId="Body" runat="server">
-    <div style="width:1464px">
-        <div style="width:669px; float:left; margin-left:20px; align-content:center">
+    <div class="main">
+        <div class="container tim-container" style="max-width:1500px; padding-top:100px">
             
-                                <h3>&nbsp;Plataforma Virtual de Emprendimiento</h3>
+                                <h2 style="font-family:Arial, Helvetica, sans-serif" class="text-center">Plataforma Virtual de Emprendimiento</h2>
                                 <br />
-            <div style="font-size:18px;">              
+            <p style="font-size: 22px; text-align:justify; font-family:Arial, Helvetica, sans-serif" class="subtitle">              
              La PVE se visualiza como el conjunto de tecnologías destinadas a promover fomentar desarrollar y gestionar el emprendimiento en la comunidad universitaria de PUCMM. Se espera que esta plataforma permita a los Gestores, Asesores y Mentores gestionar de manera efectiva el centro de emprendimiento, y a que a su vez Estudiantes, Profesores, Personal Administrativo y Egresados puedan someter sus ideas de negocios con el objetivo de ser evaluadas desarrolladas e incubadas en el centro de emprendimiento con miras a la creación de empresas sostenibles que contribuyen al desarrollo de la República Dominicana</span></span>.<br />
-                               </div>
+                               </p>
                                    
                                    <br />
         </div>
                   
            
            
-        <div style="width:624px; float:none; margin-left:720px; ">
-            <h3>&nbsp; Noticias</h3>
-            Campus:<br />
+         <div class="container tim-container" style="max-width:800px; padding-top:100px">
+            <h2 style=" font-family:'Times New Roman', Times, serif">&nbsp; Noticias</h2>
+            <h4 style=" font-family:'Times New Roman', Times, serif">Campus:</h4><br />
             <div style="width:400px">
 <div style="width:100px; float:left">
     <asp:Button ID="Button1" runat="server" Height="39px" Text="CSTI" Width="102px" OnClick="Button1_Click" />
@@ -25,7 +27,7 @@
                 <asp:Button ID="Button2" runat="server" Height="39px" Text="CSTA" Width="102px" OnClick="Button2_Click" />
             </div>
                 </div>
-      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" AllowPaging="True" GridLines="None" Width="582px" ForeColor="#333333">
+      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" AllowPaging="True" GridLines="None" Width="981px" ForeColor="#333333" Height="283px">
           <AlternatingRowStyle BackColor="White" />
           <Columns>
               <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha" />

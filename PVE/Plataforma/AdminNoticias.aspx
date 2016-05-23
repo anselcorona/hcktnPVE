@@ -10,7 +10,7 @@
 
 
     <div>
-        <div style="margin-left:500px; width:500px">
+        <div  style="margin-left:400px; width:500px">
     &nbsp;<br />
     <h3>Agregar Nueva Noticia</h3><br />
     <br />
@@ -26,7 +26,7 @@
     Campus:
      
     <br />
-    <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="125px">
+    <asp:DropDownList ID="DropDownList1" runat="server" Height="59px" Width="164px">
         <asp:ListItem>CSTI</asp:ListItem>
         <asp:ListItem>CSTA</asp:ListItem>
     </asp:DropDownList>
